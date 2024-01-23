@@ -60,7 +60,7 @@ body {
 }
 
 /* #################### phone screen #################### */
-@media (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   /* #### header #### */
   #cont {
     flex-direction: row;
@@ -72,6 +72,7 @@ body {
   #div_logo {
     justify-content: start;
     flex-grow: 0;
+    padding: 0 0 8px 0;
   }
 
   /* #### nav #### */
@@ -88,9 +89,11 @@ body {
     flex: 1;
     padding: 10px;
   }
+
   /* #### btn #### */
   #btn {
     flex-grow: 0;
+    padding: 0 8px 0 0;
   }
   #header_btn {
     width: max-content;
