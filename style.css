@@ -171,6 +171,7 @@ body {
   border-radius: 5px;
   width: 11rem;
   height: 6vh;
+  overflow: hidden;
 }
 
 /* #################### layout #2 #################### */
