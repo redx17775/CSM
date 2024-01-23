@@ -172,10 +172,7 @@ body {
   width: 11rem;
   height: 6vh;
   overflow: hidden;
-  color: black;
-}
-#faid_btn a {
-  color: black;
+  color: #2b312e !important;
 }
 
 /* #################### layout #2 #################### */
