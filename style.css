@@ -173,6 +173,9 @@ body {
   height: 6vh;
   overflow: hidden;
 }
+#faid_btn a {
+  color: black;
+}
 
 /* #################### layout #2 #################### */
 #Genre {
