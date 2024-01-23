@@ -1,53 +1,52 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  background-color: #ec9c25;
 }
 
-/* ####################### header ####################### */
+/* #################### header #################### */
 #cont {
   background-color: #c3544b;
   width: 100%;
   height: max-content;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
-
-/* ####################### set flex ####################### */
 .flex_item {
   flex-grow: 1;
 }
 
-/* ####################### logo ####################### */
+/* #################### logo #################### */
 #logo {
   width: 150px;
   height: auto;
 }
 #div_logo {
-  flex-grow: 0;
   display: flex;
+  justify-content: center;
 }
 
-/* ####################### navbar ####################### */
-#navbar ul {
+/* #################### logo #################### */
+#navbar {
+  display: flex;
+  justify-content: center;
+}
+#inner_nav {
   display: flex;
   justify-content: space-evenly;
+  list-style: none;
+  text-align: center;
 }
-#navbar li {
-  list-style-type: none;
-  padding: 10px;
-}
-#navbar a {
+#inner_nav a {
   text-decoration: none;
   font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
   font-size: 2em;
   color: #edab18;
 }
-/* ####################### btn ####################### */
+
+/* #################### btn #################### */
+#btn {
+  padding: 5px;
+}
 #header_btn {
   background-color: #edab18;
   border: 1px solid rgba(0, 0, 0, 0.055);
@@ -57,39 +56,43 @@ body {
   font-weight: bold;
   font-size: 2em;
   color: #c3544b;
-}
-#btn {
-  display: flex;
-  justify-content: end;
-  flex-grow: 0;
-  padding: 1rem;
+  width: 100%;
 }
 
-@media (max-width: 600px) {
+/* #################### phone screen #################### */
+@media (min-width: 600px) {
+  /* #### header #### */
   #cont {
-    flex-direction: column;
-    align-items: normal;
-    justify-content: flex-start;
-    height: max-content;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
+
+  /* #### logo #### */
   #div_logo {
-    justify-content: center;
+    justify-content: start;
+    flex-grow: 0;
   }
-  nav {
-    height: min-content;
-  }
+
+  /* #### nav #### */
   #navbar {
-    border-top: 1px solid #3f3f45;
-    border-bottom: 1px solid #3f3f45;
+    justify-content: start;
+    margin: 0;
   }
-  #navbar ul {
-    justify-content: space-evenly;
+  #inner_nav {
+    justify-content: start;
+    list-style: none;
+    padding: 0;
   }
-  #btn {
-    justify-content: center;
+  #inner_nav li {
+    flex: 1;
     padding: 10px;
   }
+  /* #### btn #### */
+  #btn {
+    flex-grow: 0;
+  }
   #header_btn {
-    width: 100%;
+    width: max-content;
   }
 }
