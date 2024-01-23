@@ -1,10 +1,17 @@
+/* logo hover effect*/
+
 body {
   margin: 0;
+  background-color: #c3544b;
+}
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 /* #################### header #################### */
 #cont {
-  background-color: #c3544b;
+  background-color: #2b312e;
   width: 100%;
   height: max-content;
   display: flex;
@@ -42,6 +49,9 @@ body {
   font-size: 2em;
   color: #edab18;
 }
+#inner_nav a:hover {
+  color: #c3ccc7;
+}
 
 /* #################### btn #################### */
 #btn {
@@ -55,8 +65,11 @@ body {
   font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
   font-size: 2em;
-  color: #c3544b;
+  color: #2b312e;
   width: 100%;
+}
+#header_btn:hover {
+  background-color: #c3ccc7;
 }
 
 /* #################### phone screen #################### */
@@ -67,35 +80,135 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .flex_item {
+    height: 50px;
+  }
 
   /* #### logo #### */
   #div_logo {
     justify-content: start;
     flex-grow: 0;
-    padding: 0 0 8px 0;
+    margin-left: 1rem;
   }
 
   /* #### nav #### */
   #navbar {
-    justify-content: start;
     margin: 0;
+    align-items: center;
   }
   #inner_nav {
     justify-content: start;
+    align-items: center;
     list-style: none;
     padding: 0;
+    margin-left: 2rem;
   }
   #inner_nav li {
-    flex: 1;
-    padding: 10px;
+    padding: 0 1rem 0;
   }
 
   /* #### btn #### */
   #btn {
     flex-grow: 0;
-    padding: 0 8px 0 0;
+    display: flex;
   }
-  #header_btn {
-    width: max-content;
-  }
+}
+
+/* #################### main #################### */
+
+/* #################### first layout #################### */
+#faid {
+  background-image: linear-gradient(
+      90deg,
+      black 0%,
+      rgba(255, 255, 255, 0) 150%
+    ),
+    url(img/hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  font-family: "Bebas Neue", sans-serif;
+  color: #c3ccc7;
+}
+
+/* ##### titel ##### */
+.faid_item {
+  flex-grow: 1;
+}
+#fade_titel {
+  font-size: 3em;
+  flex-grow: 2;
+  display: flex;
+}
+#fade_titel h1 {
+  margin-left: 2rem;
+  align-self: flex-end;
+  margin-bottom: 0;
+}
+
+/* ##### text ##### */
+#fade_text {
+  flex-grow: 0;
+}
+#fade_text p {
+  font-size: 2em;
+  margin-left: 2rem;
+  margin-top: 0;
+}
+/* ##### btn ##### */
+#faid_btn {
+  margin-bottom: 2rem;
+}
+#faid_btn button {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2em;
+  margin-left: 2rem;
+  border: none;
+  border-radius: 5px;
+  width: 10rem;
+  height: 5vh;
+}
+
+/* #################### layout #2 #################### */
+#Genre {
+  background-color: #8d756b;
+  display: flex;
+}
+.Genre_item {
+  color: #f5f5dc;
+  text-shadow: 1px 1px 1px #27211e;
+  flex: 1;
+}
+
+/* ##### img ##### */
+#Genre_img {
+  background-image: url(img/Genre_img.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+/* ##### text ##### */
+#Genre_text {
+  flex-grow: 1;
+}
+#Genre_text h1 {
+  font-size: 3rem;
+}
+#Genre_text ul {
+  list-style: none;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#Genre_text li {
+  display: flex;
+}
+#Genre_text img {
+  width: 60px;
+  height: 38px;
 }
