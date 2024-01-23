@@ -1,4 +1,5 @@
 /* logo hover effect*/
+/* margin to the bottom of #Genre_text ul*/
 
 body {
   margin: 0;
@@ -144,7 +145,7 @@ body {
   display: flex;
 }
 #fade_titel h1 {
-  margin-left: 2rem;
+  margin-left: 1rem;
   align-self: flex-end;
   margin-bottom: 0;
 }
@@ -155,7 +156,7 @@ body {
 }
 #fade_text p {
   font-size: 2em;
-  margin-left: 2rem;
+  margin-left: 1rem;
   margin-top: 0;
 }
 /* ##### btn ##### */
@@ -165,7 +166,7 @@ body {
 #faid_btn button {
   font-family: "Bebas Neue", sans-serif;
   font-size: 2em;
-  margin-left: 2rem;
+  margin-left: 1rem;
   border: none;
   border-radius: 5px;
   width: 10rem;
@@ -193,7 +194,8 @@ body {
 }
 /* ##### text ##### */
 #Genre_text {
-  flex-grow: 1;
+  margin-bottom: 3rem;
+  height: 100%;
 }
 #Genre_text h1 {
   font-size: 3rem;
