@@ -172,6 +172,7 @@ body {
   width: 11rem;
   height: 6vh;
   overflow: hidden;
+  color: black;
 }
 #faid_btn a {
   color: black;
